@@ -12,7 +12,7 @@ environments {
 	dataSource {
 		pooled=true
 		dbCreate='update'
-		url='jdbc:mysql://localhost:3306/zeroddbname?useUnicode=yes&characterEncoding=UTF-8'
+		url='jdbc:mysql://10.156.114.222:3306/zeroddbname?useUnicode=yes&characterEncoding=UTF-8'
 		driverClassName='com.mysql.jdbc.Driver'
 		dialect='org.hibernate.dialect.MySQL5InnoDBDialect'
 		username='zerodusername'
@@ -37,7 +37,7 @@ test {
 	dataSource {
 		pooled=true
 		dbCreate='update'
-		url='jdbc:mysql://localhost:3306/zeroddbname?useUnicode=yes&characterEncoding=UTF-8'
+		url='jdbc:mysql://10.156.114.222:3306/zeroddbname?useUnicode=yes&characterEncoding=UTF-8'
 		driverClassName='com.mysql.jdbc.Driver'
 		dialect='org.hibernate.dialect.MySQL5InnoDBDialect'
 		username='zerodusername'
@@ -62,7 +62,7 @@ production {
 	dataSource {
 		pooled=true
 		dbCreate='update'
-		url='jdbc:mysql://localhost:3306/zeroddbname?useUnicode=yes&characterEncoding=UTF-8'
+		url='jdbc:mysql://10.156.114.222:3306/zeroddbname?useUnicode=yes&characterEncoding=UTF-8'
 		driverClassName='com.mysql.jdbc.Driver'
 		dialect='org.hibernate.dialect.MySQL5InnoDBDialect'
 		username='zerodusername'
