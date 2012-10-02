@@ -10,11 +10,27 @@ hibernate {
 environments {
     development {
 	dataSource {
-		driverClassName='org.h2.Driver'
-		username='sa'
-		password=''
-		dbCreate='create-drop'
-		url='jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000'
+		pooled=true
+		dbCreate='update'
+		url='jdbc:mysql://localhost/zeroddbname?useUnicode=yes&characterEncoding=UTF-8'
+		driverClassName='com.mysql.jdbc.Driver'
+		dialect='org.hibernate.dialect.MySQL5InnoDBDialect'
+		username='zerodusername'
+		password='zerodpassword'
+		properties {
+			maxActive=5
+			maxIdle=3
+			minIdle=1
+			initialSize=1
+			removeAbandoned=true
+			minEvictableIdleTimeMillis=60000
+			timeBetweenEvictionRunsMillis=60000
+			maxWait=10000
+			validationQuery='SELECT 1'
+			testOnBorrow=true
+			testOnReturn=true
+			testWhileIdle=true
+		}
 	}
 }
 test {
