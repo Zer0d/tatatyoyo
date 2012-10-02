@@ -27,18 +27,14 @@ environments {
         username = "zerodusername"
         password = "zerodpassword"
         properties {
-            maxActive = 5
-            maxIdle = 3
-            minIdle = 1
-            initialSize = 1
-            removeAbandoned = true
-            minEvictableIdleTimeMillis = 60000
-            timeBetweenEvictionRunsMillis = 60000
-            maxWait = 10000
-            validationQuery = "SELECT 1"
-            testOnBorrow=true
-            testOnReturn=true
-            testWhileIdle=true
+                maxActive=50
+                maxIdle=25
+                minIdle=5
+                initialSize=5
+                minEvictableIdleTimeMillis=60000
+                timeBetweenEvictionRunsMillis=60000
+                maxWait=10000
+                validationQuery='SELECT 1'
         }
       }
     }
@@ -52,18 +48,14 @@ environments {
         username = "zerodusername"
         password = "zerodpassword"
         properties {
-            maxActive = 50
-            maxIdle = 25
-            minIdle = 5
-            initialSize = 5
-            removeAbandoned = true
-            minEvictableIdleTimeMillis = 60000
-            timeBetweenEvictionRunsMillis = 60000
-            maxWait = 10000
-            validationQuery = "SELECT 1"
-            testOnBorrow=true
-            testOnReturn=true
-            testWhileIdle=true
+                maxActive=50
+                maxIdle=25
+                minIdle=5
+                initialSize=5
+                minEvictableIdleTimeMillis=60000
+                timeBetweenEvictionRunsMillis=60000
+                maxWait=10000
+                validationQuery='SELECT 1'
         }
       }
     }
